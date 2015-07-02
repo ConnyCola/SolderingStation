@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -116,8 +116,8 @@
 </layers>
 <board>
 <plain>
-<dimension x1="49.0625" y1="49.92" x2="0" y2="49.92" x3="24.53125" y3="59.690003125" textsize="3.5" layer="37"/>
-<dimension x1="0" y1="49.92" x2="0" y2="0" x3="-16.51" y3="24.96" textsize="3.5" layer="37"/>
+<dimension x1="49.0625" y1="49.92" x2="0" y2="49.92" x3="24.53125" y3="59.690003125" layer="37"/>
+<dimension x1="0" y1="49.92" x2="0" y2="0" x3="-16.51" y3="24.96" layer="37"/>
 <hole x="32.0675" y="15.875" drill="3.2"/>
 <circle x="32.0675" y="15.875" radius="4" width="0.17" layer="21"/>
 <hole x="32.0675" y="45.085" drill="3.2"/>
@@ -130,8 +130,8 @@
 <wire x1="48.895" y1="47.3475" x2="46.395" y2="49.8475" width="0" layer="20" curve="90"/>
 <wire x1="46.395" y1="49.8475" x2="2.5" y2="49.8475" width="0" layer="20"/>
 <wire x1="2.5" y1="49.8475" x2="0" y2="47.3475" width="0" layer="20" curve="90"/>
-<dimension x1="0" y1="49.8475" x2="15.24" y2="34.29" x3="7.62" y3="54.61" textsize="3.5" layer="37" dtype="horizontal"/>
-<dimension x1="15.77" y1="14.5925" x2="15.24" y2="28.575" x3="-6.35" y3="21.58375" textsize="3.5" layer="37" dtype="vertical"/>
+<dimension x1="0" y1="49.8475" x2="15.24" y2="34.29" x3="7.62" y3="54.61" layer="37" dtype="horizontal"/>
+<dimension x1="15.77" y1="14.5925" x2="15.24" y2="28.575" x3="-6.35" y3="21.58375" layer="37" dtype="vertical"/>
 <text x="39.6875" y="45.72" size="1.3" layer="21" ratio="13" rot="R135">VCC</text>
 <text x="42.2275" y="45.72" size="1.3" layer="21" ratio="13" rot="R135">SB</text>
 <text x="44.7675" y="45.72" size="1.3" layer="21" ratio="13" rot="R135">Poti</text>
@@ -2767,7 +2767,15 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="dirt_cheap_dirty_boards.v1">
+<designrules>
+<description language="de">&lt;b&gt;EAGLE Design-Regeln&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Regeln sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design-Regeln unter 
+einem neuen Namen ab.
+</description>
 <description language="en">&lt;b&gt;Dirty Cheap Dirty Board Design Rules&lt;/b&gt;
 &lt;br&gt;
 &lt;br&gt;Min width/Spacing: 5/5mil

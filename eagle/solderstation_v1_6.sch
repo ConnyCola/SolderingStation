@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9068,6 +9068,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="360.68" y1="50.8" x2="330.2" y2="50.8" width="0.6096" layer="94"/>
 <wire x1="330.2" y1="50.8" x2="330.2" y2="91.44" width="0.6096" layer="94"/>
 <text x="334.518" y="81.534" size="3.81" layer="94" ratio="14">Display</text>
+<text x="289.56" y="5.08" size="1.778" layer="91">http://debugginglab.wordpress.com</text>
+<text x="289.56" y="15.24" size="6.4516" layer="91">MW</text>
+<text x="289.56" y="12.7" size="1.4224" layer="91">Matthias Wagner</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="76.2" y="210.82"/>
