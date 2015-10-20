@@ -6,6 +6,7 @@
 //*******************************//
 
 #define __PROG_TYPES_COMPAT__ 
+#include <FastLED.h>
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <Adafruit_ST7735.h> // Hardware-specific library
 #include <SPI.h>
@@ -20,6 +21,8 @@
 #define mosi 	11		// Don't change
 #define cs_tft	10		// 
 
+#define LED_PIN 6
+#define BRIGHTNESS 200
 
 //V1.5
 #define dc   	9		// 8
@@ -58,9 +61,14 @@ Adafruit_ST7735 tft = Adafruit_ST7735(cs_tft, dc, rst);  // Invoke custom librar
 int pwm = 0; //pwm Out Val 0.. 255
 int soll_temp = 300;
 boolean standby_act = false;
+CRGB led[1];
 
 void setup(void) {
-  
+
+	FastLED.addLeds<WS2812B, LED_PIN, GRB>(led, 1);
+	FastLED.setBrightness(BRIGHTNESS);
+	led[0] = CRGB::White;
+	
 	pinMode(BLpin, OUTPUT);
 	digitalWrite(BLpin, LOW);
 	
@@ -196,6 +204,9 @@ void loop() {
 	
 	writeHEATING(soll_temp, actual_temperature, pwm);
  
+	//update LED
+	FastLED.show();
+	
 	delay(DELAY_MAIN_LOOP);		//wait for some time
 }
 
@@ -259,8 +270,14 @@ void writeHEATING(int tempSOLL, int tempVAL, int pwmVAL){
 		int tempDIV = round(float(tempSOLL - tempVAL)*8.5);
 		tempDIV = tempDIV > 254 ? tempDIV = 254 : tempDIV < 0 ? tempDIV = 0 : tempDIV;
 		tft.setTextColor(Color565(tempDIV, 255-tempDIV, 0));
+		led[0].r = tempDIV;
+		led[0].g = 255-tempDIV;
+		led[0].b = 0;
 		if (standby_act) {
 			tft.setTextColor(ST7735_CYAN);
+			led[0].r = 0;
+			led[0].g = 0;
+			led[0].b = 255;
 		}
 		tft.print(tempVAL);
 		
