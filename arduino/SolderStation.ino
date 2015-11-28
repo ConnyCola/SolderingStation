@@ -24,6 +24,9 @@
 #define LED_PIN 6
 #define BRIGHTNESS 200
 
+//Missing color in TFT lib
+#define ST7735_GREY 0x632C
+
 //V1.5
 #define dc   	9		// 8
 #define rst  	12		// 9 
