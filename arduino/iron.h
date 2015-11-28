@@ -3,7 +3,7 @@
 // Time generated : Thu, 27 Mar 14 19:03:52 +0100  (Server timezone: CET)
 // Image Size     : 108x115 pixels
 // Memory usage   : 24840 bytes
-
+#define __PROG_TYPES_COMPAT__ 
 #include <avr/pgmspace.h>
 
 const prog_uint8_t iron[] PROGMEM={
