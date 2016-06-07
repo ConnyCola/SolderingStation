@@ -1,0 +1,51 @@
+eagle/solderstation/solderstation_v1_6.sch am 02.07.15 01:52
+
+Parts list: 
+
+count Value                  Device                 Component                                 
+1                            M02LOCK_LONGPADS       JP2                                      
+1                            M04LOCK                JP3                                      
+2     1M                     R-EU_R0603             R13, R16                                 
+10    1k                     R-EU_R0603             R3, R4, R5, R6, R7, R8, R9, R10, R15, R18
+3     10k                    R-EU_R0603             R11, R12, R14                            
+1     10u 6V                 C-EUC1206              C7                                       
+1     10u 16V                C-EUC1206              C2                                       
+1     56k                    R-EU_R0603             R2                                       
+1     78L05F                 78L05F                 IC2                                      
+1     100R                   R-EU_R0603             R1                                       
+5     100n                   C-EUC0603              C1, C3, C4, C5, C6                       
+1     ARDUINO_PRO_MINI       ARDUINO_PRO_MINI       U$1                                      
+1     AUDIO_JACK_3,5MMCONRAD AUDIO_JACK_3,5MMCONRAD U$2                                      
+2     BSN138                 BSN20                  T2, T3                                   
+1     Display Header         M08LOCK                JP1                                      
+1     IRF7416                IRF7416                T1                                       
+1     M01PTH                 M01PTH                 JP4                                      
+2     MW_LOGO                MW_LOGO                U$3, U$5                                 
+2     MW_LOGO_SOLDER         MW_LOGO_SOLDER         U$4, U$9                                 
+1     OPA336U                OPA336U                IC1                                      
+1     OSH_LOGOS              OSH_LOGOS              U$8                                      
+1     POWER_JACKPTH          POWER_JACKPTH          J1                                       
+
+
+
+Parts list				
+				
+count	Name					Store		No.	 			Price 
+1		Arduino Pro Mini		Banggood	SKU066315	 	2,71 € 
+1		TFT 160x128 (SPI)		Banggood	SKU103769	 	3,23 € 
+1		3,5mm pcb Buchse		Conrad		734101	 		1,10 € 
+1		3,5mm Buchse			Conrad		595223		 	1,09 € 
+1		3,5mm Stecker			mouser		568-NYS231	 	0,82 € 
+1		12V Jack				Conrad		735742	 		0,58 € 
+1		opa336					mouser		595-OPA336UA	1,72 € 
+1		irf7416					mouser		942-IRF7416PBF	1,07 € 
+1		bss138					mouser		512-BSS138	 	0,18 € 
+1		78L05					mouser		511-L78L05ABU	0,36 € 
+1,15	LappKabel 1,15meter		Conrad		608304	 		2,44 € 
+1		Main Switch				Banggood	SKU127477	 	0,58 € 
+1		Poti 10k				Banggood	SKU047544	 	0,88 € 			
+1		Power supply 12V 8A		Banggood 					15,39 € 
+4		rubber feet 50piece		EBAY		 				0,30 € 			
+1		PCB			 			DirtyPCB					1,40 € 
+1		Weller RT1				mouser		 				32,56 € 
+1		3D-Housing	ALBERT		 							6,00 € 
