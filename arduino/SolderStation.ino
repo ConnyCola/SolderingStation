@@ -78,7 +78,7 @@ void setup(void) {
 	
 	tft.setRotation(0);	// 0 - Portrait, 1 - Lanscape
 	tft.fillScreen(QDTech_BLACK);
-	tft.setTextWrap(true);
+	tft.setTextWrap(false);
 	
 	
 	
